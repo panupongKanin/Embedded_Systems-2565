@@ -177,6 +177,18 @@ void loop() {
 
 ```
 
+  __รูปการต่อวงจร – 1__
+   
+   [![IMG-0413.jpg](https://i.postimg.cc/3wy3MGSP/IMG-0413.jpg)](https://postimg.cc/Y4w5Yvw3)
+   
+   __รูปการต่อวงจร – 2__
+   
+   [![IMG-0414.jpg](https://i.postimg.cc/vm6w2sDy/IMG-0414.jpg)](https://postimg.cc/B8sztRx7)
+   
+   __รูปการต่อวงจร – 3__
+   
+   [![2566-04-01-22-44-43.png](https://i.postimg.cc/VsgpR64M/2566-04-01-22-44-43.png)](https://postimg.cc/NLydGQ3f)
+
 
 * __Quiz_103 – Read Sensor and Show__
 
