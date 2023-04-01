@@ -10,9 +10,7 @@
   
   [![2566-04-01-19-07-28.png](https://i.postimg.cc/VN7Lsvsc/2566-04-01-19-07-28.png)](https://postimg.cc/R3HzXMnP)
   
-  
-  ```c++
-  
+```c++
 #define BUTTON_PIN1     22 // GIOP22 pin connected to button
 #define BUTTON_PIN2     23 // GIOP23 pin connected to button
 
@@ -108,7 +106,7 @@ void loop() {
   led2();
 
 }
-  ```
+```
 
 
 * __Quiz_102 – ปรับการแสดงผลที่ Serial Monitor เป็นดังนี้__
