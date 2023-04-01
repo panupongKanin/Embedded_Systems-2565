@@ -114,7 +114,7 @@ void loop() {
 
    __รูปการต่อวงจร – 1__
    
-   [![IMG-0408.jpg](https://i.postimg.cc/yd06W188/IMG-0408.jpg)](https://postimg.cc/JD4C2WXf)
+   [![IMG-0412.jpg](https://i.postimg.cc/WzRn6nV7/IMG-0412.jpg)](https://postimg.cc/8JHMTLjF)
    
    __รูปการต่อวงจร – 2__
    
