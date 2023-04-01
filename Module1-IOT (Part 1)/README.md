@@ -17,3 +17,5 @@
 
 
 * __Quiz_103 – Read Sensor and Show__
+
+  [![2566-04-01-19-13-33.png](https://i.postimg.cc/gJWFWP8P/2566-04-01-19-13-33.png)](https://postimg.cc/XZQDfms2)
