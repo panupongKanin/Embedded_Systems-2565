@@ -11,7 +11,7 @@
   [![2566-04-01-19-07-28.png](https://i.postimg.cc/VN7Lsvsc/2566-04-01-19-07-28.png)](https://postimg.cc/R3HzXMnP)
   
   
-  - Code
+  __Code__
   
 ```c++
 #define BUTTON_PIN1     22 // GIOP22 pin connected to button
@@ -112,8 +112,8 @@ void loop() {
 ```
    
 
-   รูปการต่อวงจร – 1
-   รูปการต่อวงจร – 2
+   __รูปการต่อวงจร – 1__
+   __รูปการต่อวงจร – 2__
 
 
 
