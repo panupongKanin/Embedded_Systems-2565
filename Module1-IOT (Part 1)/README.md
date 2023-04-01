@@ -124,7 +124,7 @@ void loop() {
 
 
 
-* __Quiz_102 – ปรับการแสดงผลที่ Serial Monitor เป็นดังนี้__
+* [__Quiz_102 – ปรับการแสดงผลที่ Serial Monitor เป็นดังนี้__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201)/Quiz_102)
 
   [![2566-04-01-19-11-49.png](https://i.postimg.cc/4nC3C0f7/2566-04-01-19-11-49.png)](https://postimg.cc/N24tmprB)
   __Code__
