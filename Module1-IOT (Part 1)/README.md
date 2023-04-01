@@ -5,7 +5,7 @@
 
 #### __Start with Arduino Board__
 
-* __Quiz_101 – กดติด กดดับ 2 ชุด__
+* [__Quiz_101 – กดติด กดดับ 2 ชุด__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201)/Quiz_101)
   - หากต้องการให้ใช้ 1 สวิตซ์ ควบคุม 1 LED แบบกดติด-กดดับ จำนวน 2 วงจรจะต่อวงจรและเขียนโปรแกรมอย่างไร {SW-D22 -- LED-D19, SW-D23 -- LED-D18}
   
   [![2566-04-01-19-07-28.png](https://i.postimg.cc/VN7Lsvsc/2566-04-01-19-07-28.png)](https://postimg.cc/R3HzXMnP)
