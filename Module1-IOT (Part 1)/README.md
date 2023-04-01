@@ -9,3 +9,6 @@
 
 
 * __Quiz_102 – ปรับการแสดงผลที่ Serial Monitor เป็นดังนี้__
+
+
+* __Quiz_103 – Read Sensor and Show__
