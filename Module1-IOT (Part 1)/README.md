@@ -10,6 +10,8 @@
   
   [![2566-04-01-19-07-28.png](https://i.postimg.cc/VN7Lsvsc/2566-04-01-19-07-28.png)](https://postimg.cc/R3HzXMnP)
   
+  - Code
+  
 ```c++
 #define BUTTON_PIN1     22 // GIOP22 pin connected to button
 #define BUTTON_PIN2     23 // GIOP23 pin connected to button
