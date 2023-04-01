@@ -1,4 +1,4 @@
-#include <DHT.h>
+#include <DHT.h> //https://www.arduinolibraries.info/libraries/dht-sensor-library
 #define DHT_SENSOR_PIN  21 // ESP32 pin GIOP21 connected to DHT22 sensor
 #define DHT_SENSOR_TYPE DHT22
 
