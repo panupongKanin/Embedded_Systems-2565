@@ -11,9 +11,6 @@
   [![2566-04-01-19-07-28.png](https://i.postimg.cc/VN7Lsvsc/2566-04-01-19-07-28.png)](https://postimg.cc/R3HzXMnP)
   
   
-  
-  
-  
   - Code
   
 ```c++
@@ -113,6 +110,8 @@ void loop() {
 
 }
 ```
+    - รูปการต่อวงจร – 1
+    - รูปการต่อวงจร – 2
 
 
 * __Quiz_102 – ปรับการแสดงผลที่ Serial Monitor เป็นดังนี้__
