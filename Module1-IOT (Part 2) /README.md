@@ -128,7 +128,7 @@
   __รูปการต่อวงจร – 1__
   
   [![2566-04-02-20-39-42.jpg](https://i.postimg.cc/SskYHS69/2566-04-02-20-39-42.jpg)](https://postimg.cc/LqQs1M04)
-  [![2566-04-02-20-40-33.png](https://i.postimg.cc/qBwGGYsq/2566-04-02-20-40-33.png)](https://postimg.cc/V5SMfKHP)
+  [![dszd.jpg](https://i.postimg.cc/kgRjgckc/dszd.jpg)](https://postimg.cc/YvkNX12G)
   
   __รูปการต่อวงจร – 2__
   
