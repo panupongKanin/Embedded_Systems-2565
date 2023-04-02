@@ -124,23 +124,16 @@
   }
   ```
 
-
-
   __รูปการต่อวงจร – 1__
-
   [![2566-04-02-20-39-42.png](https://i.postimg.cc/fL4869yb/2566-04-02-20-39-42.png)](https://postimg.cc/kVcNSDxr)
-
   [![2566-04-02-20-40-33.png](https://i.postimg.cc/qBwGGYsq/2566-04-02-20-40-33.png)](https://postimg.cc/V5SMfKHP)
   
   __รูปการต่อวงจร – 2__
-
   [![2566-04-02-20-23-30.png](https://i.postimg.cc/zXrxd8hC/2566-04-02-20-23-30.png)](https://postimg.cc/230dyp2y)
 
   __รูปการต่อวงจร – 3__
-
   [![IMG-0430.jpg](https://i.postimg.cc/Bvr5SwcN/IMG-0430.jpg)](https://postimg.cc/PLMvKy78)
 
   __หน้าจอ Web Control__
-
   [![2566-04-02-20-37-46.png](https://i.postimg.cc/qMD3B5pn/2566-04-02-20-37-46.png)](https://postimg.cc/JGJnPKD4)
 
