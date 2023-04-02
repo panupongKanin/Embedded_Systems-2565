@@ -132,7 +132,7 @@
   
   __รูปการต่อวงจร – 2__
   
-  [![2566-04-02-20-23-30.png](https://i.postimg.cc/zXrxd8hC/2566-04-02-20-23-30.png)](https://postimg.cc/230dyp2y)
+  [![2566-04-02-20-23-30.jpg](https://i.postimg.cc/vHBfQZpL/2566-04-02-20-23-30.jpg)](https://postimg.cc/jCpLctqL)
 
   __รูปการต่อวงจร – 3__
   
