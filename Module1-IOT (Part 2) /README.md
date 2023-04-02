@@ -136,7 +136,7 @@
 
   __รูปการต่อวงจร – 3__
   
-  [![IMG-0430.jpg](https://i.postimg.cc/Bvr5SwcN/IMG-0430.jpg)](https://postimg.cc/PLMvKy78)
+  [![IMG-0430.jpg](https://i.postimg.cc/QN6jr8g3/IMG-0430.jpg)](https://postimg.cc/z3RsC1Pt)
 
   __หน้าจอ Web Control__
   
