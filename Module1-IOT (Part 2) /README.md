@@ -127,6 +127,7 @@
 
   __รูปการต่อวงจร – 1__
   
+  
   [![2566-04-02-20-39-42.png](https://i.postimg.cc/sgDvkFq7/2566-04-02-20-39-42.png)](https://postimg.cc/xchfmZ01)
   [![2566-04-02-20-40-33.png](https://i.postimg.cc/qBwGGYsq/2566-04-02-20-40-33.png)](https://postimg.cc/V5SMfKHP)
   
