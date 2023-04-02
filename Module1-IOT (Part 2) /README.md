@@ -352,7 +352,7 @@
   
   __รูปการต่อวงจร – 2__
   
-  [![2566-04-02-22-08-20.jpg](https://i.postimg.cc/ht0zFJr0/2566-04-02-22-08-20.jpg)](https://postimg.cc/75fY0ZjC)
+  [![2566-04-02-22-08-20.png](https://i.postimg.cc/Hk3wwvfH/2566-04-02-22-08-20.png)](https://postimg.cc/Sn2YqdSt)
 
   __รูปการต่อวงจร – 3__
   
