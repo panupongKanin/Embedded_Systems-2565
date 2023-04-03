@@ -1,6 +1,8 @@
 # Embedded_Systems-2565
 
 
+### WEEK01 จะทำ Module1-IOT (Part 1) และ Module1-IOT (Part 2)🦋🦋
+
 | สารบัญ | หน้า |
 | :-------- | :--------: |
 |   Module1-IOT (Part 1)   |   [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201))   |
