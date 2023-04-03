@@ -1,4 +1,4 @@
-* [__Quiz_203 – Publish__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%202)%20/Quiz_203)
+* __Quiz_203 – Publish__
   - อ่านค่า DHT-22 แล้วส่งไปยัง MQTT Broker ทุกๆ 5 วินาที 
   - ควบคุมการแสดงผลให้ 4 LED แสดงผลตามข้อกำหนดดังนี้
   [![1-ST3e-Skg3mqbl-Bc-ZTkpvyyw.webp](https://i.postimg.cc/SQwp0vRd/1-ST3e-Skg3mqbl-Bc-ZTkpvyyw.webp)](https://postimg.cc/0rd4DZpK)

@@ -1,4 +1,4 @@
-* [__Quiz_202 – Web Control 4 LED and Monitor Humid/Temperature__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%202)%20/Quiz_202)
+* __Quiz_202 – Web Control 4 LED and Monitor Humid/Temperature__
   - เพิ่มเติมจาก Q202 อยากได้ปุ่มสำหรับคุมปิด-เปิด หลอดไฟ LED 4 ดวง
   - อยากมีกด Link ไปที่หน้า FB ของตัวเอง
 

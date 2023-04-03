@@ -1,4 +1,4 @@
-* [__Quiz_204 – Publish and Subscribe__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%202)%20/Quiz_204)
+* __Quiz_204 – Publish and Subscribe__
   - อ่านค่า DHT-22 แล้วส่งไปยัง MQTT Broker ทุกๆ 5 วินาที 
   - ควบคุมการปิดเปิด 4 LED
   - รับค่าสวิตซ์กำหนด SW1 แจ้ง Overheat Alarm, SW2 แจ้ง Intruders Alarm
