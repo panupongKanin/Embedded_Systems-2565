@@ -2,7 +2,7 @@
 
 
 ### WEEK01 จะทำ [Module1-IOT (Part 1)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201)) และ [Module1-IOT (Part 2)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%202)%20) 🦋🦋
-### WEEK01 จะทำ Module1-IOT (Part 3) และ Module1-IOT (Part 4 🦋🦋
+### WEEK01 จะทำ Module1-IOT (Part 3) และ Module1-IOT (Part 4) 🦋🦋
 
 | สารบัญ | หน้า |
 | :-------- | :--------: |
