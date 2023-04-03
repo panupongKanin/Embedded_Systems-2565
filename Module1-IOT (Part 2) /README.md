@@ -538,7 +538,9 @@
   
   __ผลการทดลอง__
   
-  ![bloggif_642aae4ca6833](https://user-images.githubusercontent.com/111270076/229488988-4a5baed9-61fe-4af1-bcb8-7194b60f48ec.gif)
+  หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์ 
+  ![bloggif_642abafb2d691](https://user-images.githubusercontent.com/111270076/229499035-bd1c65cc-1a57-45e1-b7fe-0fa595bc8814.gif)
+
 
 
   __หน้าจอ MQTT Lens__
