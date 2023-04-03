@@ -538,7 +538,7 @@
   
   __ผลการทดลอง__
   
-    * __หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์__<br>
+    * __หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์__ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp __หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์__<br>
   ![bloggif_642abafb2d691](https://user-images.githubusercontent.com/111270076/229499035-bd1c65cc-1a57-45e1-b7fe-0fa595bc8814.gif)
 
 
