@@ -536,6 +536,8 @@
   
   [![IMG-0440.jpg](https://i.postimg.cc/1X9HqP3P/IMG-0440.jpg)](https://postimg.cc/njP7yymw)
   
+  __ผลการทดลอง__
+  
   ![bloggif_642aae4ca6833](https://user-images.githubusercontent.com/111270076/229488988-4a5baed9-61fe-4af1-bcb8-7194b60f48ec.gif)
 
 
