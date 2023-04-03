@@ -538,10 +538,18 @@
   
   __ผลการทดลอง__
   
-    * __หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์__                * __ช่วงของอุณหภูมิ (-9999, 24)__<br>
-  ![bloggif_642abafb2d691](https://user-images.githubusercontent.com/111270076/229499035-bd1c65cc-1a57-45e1-b7fe-0fa595bc8814.gif)
-
-
+  * __หากการอ่านค่าแล้วเป็น null, หรือไม่มีเซ็นเซอร์__<br><br>
+  ![bloggif_642abafb2d691](https://user-images.githubusercontent.com/111270076/229499035-bd1c65cc-1a57-45e1-b7fe-0fa595bc8814.gif)<br>
+  * __ช่วงของอุณหภูมิ (-9999, 24)__<br><br>
+  ![bloggif_642abcf830155](https://user-images.githubusercontent.com/111270076/229501599-dff9d06a-cba3-46b3-a9bc-938aea5a0cc9.gif)<br>
+  * __ช่วงของอุณหภูมิ [24,26)__<br><br>
+  ![bloggif_642abd6759c53](https://user-images.githubusercontent.com/111270076/229501640-286d0cc5-cf14-470e-afc0-29d73ca701fc.gif)<br>
+  * __ช่วงของอุณหภูมิ [26,28)__<br><br>
+  ![bloggif_642abda9db7db](https://user-images.githubusercontent.com/111270076/229501704-1c284b1e-e528-4276-be0a-cdea4df75693.gif)<br>
+  * __ช่วงของอุณหภูมิ [28,30)__<br><br>
+  ![bloggif_642abdeee2f03](https://user-images.githubusercontent.com/111270076/229501517-942147ec-4851-4c34-a071-f72356247e9d.gif)<br>
+  * __ช่วงของอุณหภูมิ [30,9999)__<br><br>
+  ![bloggif_642abead762e7](https://user-images.githubusercontent.com/111270076/229502004-60c1ccbc-3451-4d02-97ec-5acb863faab4.gif)<br>
 
   __หน้าจอ MQTT Lens__
   
