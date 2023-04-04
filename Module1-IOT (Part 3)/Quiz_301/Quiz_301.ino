@@ -1,9 +1,10 @@
 #define BLYNK_PRINT Serial
 
 
-#define BLYNK_TEMPLATE_ID "TMPL6kynEx4gG"
-#define BLYNK_TEMPLATE_NAME "Module1IOT"
-#define BLYNK_AUTH_TOKEN "1B5KC50t5IU5qdLvfG4NH1dBMMDG1sp_"
+/* Fill-in information from Blynk Device Info here */
+#define BLYNK_TEMPLATE_ID "TMPxxxxxx"
+#define BLYNK_TEMPLATE_NAME "Device"
+#define BLYNK_AUTH_TOKEN "YourAuthToken"
 
 #include <WiFiManager.h> // https://github.com/tzapu/WiFiManager
 #include <BlynkSimpleEsp32.h>
