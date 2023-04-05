@@ -1,4 +1,4 @@
-* [__Quiz_302 – DHT22 + 4 LED + 2 Switch__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203)/Quiz_302)
+* __Quiz_302 – DHT22 + 4 LED + 2 Switch__
 
   [![2566-04-05-18-25-00.png](https://i.postimg.cc/m2hwqzQJ/2566-04-05-18-25-00.png)](https://postimg.cc/BX9HPv7B)
 
