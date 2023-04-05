@@ -486,4 +486,4 @@
 
     __รูปหน้าจอ LINE ผลการทดสอบ__
 
-  [![IMG-6707.png](https://i.postimg.cc/SRR02SH5/IMG-6707.png)](https://postimg.cc/XGR1tbjc)
+  [![IMG-1958260-DC2-E0-1.jpg](https://i.postimg.cc/T2NQqwf3/IMG-1958260-DC2-E0-1.jpg)](https://postimg.cc/ThmrTTKz)
