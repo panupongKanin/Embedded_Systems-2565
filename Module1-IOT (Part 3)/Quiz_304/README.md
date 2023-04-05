@@ -1,4 +1,4 @@
-* [__Quiz_304 – Data Logger and Social Alarm__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203)/Quiz_304)
+* __Quiz_304 – Data Logger and Social Alarm__
 
   * ส่งข้อมูลอุณหภูมิไปยัง Google Spreadsheet (ทำแล้วในข้อ QB4)
   * หากอุณหภูมิที่อ่านได้เกิน 28’C ให้แจ้งเตือนผ่าน LINE และบอกด้วยว่าอุณหภูมิเท่าใด
