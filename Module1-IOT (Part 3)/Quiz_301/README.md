@@ -1,4 +1,4 @@
-* [__Quiz_301 – 4 External LED Control__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203)/Quiz_301)
+* __Quiz_301 – 4 External LED Control__
 
   [![2566-04-05-00-01-42.png](https://i.postimg.cc/mrS1YqNQ/2566-04-05-00-01-42.png)](https://postimg.cc/XZpv3sPJ)
 
