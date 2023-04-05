@@ -1,4 +1,4 @@
-* [__Quiz_303 – Social Alert__](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203)/Quiz_303)
+* __Quiz_303 – Social Alert__
 
   * กดปุ่ม B ที่ต่อกับ ESP32– ให้ส่งข้อความ “Door Open Alarm”
   * กดปุ่ม C ที่ต่อกับ ESP32– ให้ส่งข้อความ “Intruders Alarm”
