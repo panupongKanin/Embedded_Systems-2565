@@ -30,7 +30,7 @@
 - ### Module3-IoTs (Part 4 -- Chatbot LINE in Smart Farming) : [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201))
 
 ## Week05-Database and Grafana
-<img src="https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9" /> 
+<img src="https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9" /> <img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=InfluxDB&logoColor=white" /> 
 
 
 
