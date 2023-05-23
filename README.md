@@ -14,6 +14,6 @@
 
 <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://mqtt.org/assets/img/mqtt-logo.svg" width="100" height="50" alt="Description of the image">
 <body bgcolor="#4b7b92">
-  <img src="https://mqtt.org/assets/img/mqtt-logo.svg">
+  <img src="https://mosquitto.org/images/mosquitto-text-side-28.png">
 </body>
 
