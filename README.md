@@ -25,15 +25,12 @@
 
 - ### Module3-IoTs (Part 3 -- IoTs with Node-RED and RPi) : [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201))
 
-## Week05-Database and Grafana
-
-
-
 
 
 - ### Module3-IoTs (Part 4 -- Chatbot LINE in Smart Farming) : [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201))
 
-
+## Week05-Database and Grafana
+<img src="https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9" /> 
 
 
 
