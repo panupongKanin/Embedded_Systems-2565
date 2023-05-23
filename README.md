@@ -24,6 +24,8 @@
 
 
 ### Module3-LINE (Part 4 -- Chatbot LINE in Smart Farming)
-<img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://mosquitto.org/images/mosquitto-text-side-28.png" width="auto" height="30">
+<img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://img.shields.io/badge/Line-00C300?style=for-the-badge&logo=line&logoColor=white" /> <img src="https://mosquitto.org/images/mosquitto-text-side-28.png" width="auto" height="30">
+
+
 
 
