@@ -20,7 +20,9 @@
 
 
 ### Module3-LINE (Part 3 -- IoTs with Node-RED and RPi)
-<img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://mosquitto.org/images/mosquitto-text-side-28.png" width="auto" height="30">
+<img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://nodered.org/about/resources/media/node-red-icon-2.png" width="auto" height="30"> <img src="https://mosquitto.org/images/mosquitto-text-side-28.png" width="auto" height="30">
+
+
 
 
 ### Module3-LINE (Part 4 -- Chatbot LINE in Smart Farming)
