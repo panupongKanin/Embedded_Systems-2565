@@ -11,6 +11,5 @@
 |   Module1-IOT (Part 3)   |   [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203))   |
 |   Module1-IOT (Part 4)   |   [คลิก](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%204))   |
 
-![image]({https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white})
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"/>
+<img src="{https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="html"/>
