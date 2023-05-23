@@ -13,4 +13,7 @@
 
 
 <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" /> <img src="https://mqtt.org/assets/img/mqtt-logo.svg" width="100" height="50" alt="Description of the image">
+<body bgcolor="#f1f1f1">
+  <img src="https://mqtt.org/assets/img/mqtt-logo.svg">
+</body>
 
