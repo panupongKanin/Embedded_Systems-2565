@@ -13,3 +13,4 @@
 
 ![image]({https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white})
 
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"/>
