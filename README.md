@@ -34,3 +34,6 @@
 
 
 ## Week06, 07 Modbus Protocol
+## Week08 Scheider M221CE16R PLC
+## Week09 HMI -- Samkoon Model = SK-070HS
+## Week10 - Siemens LOGO8
