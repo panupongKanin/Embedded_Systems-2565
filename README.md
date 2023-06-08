@@ -1,6 +1,6 @@
 # Embedded_Systems-2565
 
-## Week06, 01 Module1-ESP32 IoT
+## Week01, 02 Module1-ESP32 IoT
 ### WEEK01 จะทำ [Module1-IOT (Part 1)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201)) และ [Module1-IOT (Part 2)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%202)%20) 🦋🦋
 ### WEEK02 จะทำ [Module1-IOT (Part 3)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%203)) และ Module1-IOT (Part 4) 🦋🦋
 
