@@ -1,0 +1,62 @@
+[
+    {
+        "id": "51676f5ae1675c99",
+        "type": "tab",
+        "label": "Q102-0101",
+        "disabled": false,
+        "info": "Using Node-RED (press to turn on press to turn off 1LED and 1Switch) ",
+        "env": []
+    },
+    {
+        "id": "eec1119ce2081360",
+        "type": "rpi-gpio in",
+        "z": "51676f5ae1675c99",
+        "name": "Switch 1",
+        "pin": "26",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "016c3e9be89901e3"
+            ]
+        ]
+    },
+    {
+        "id": "06cb6823737d2dfc",
+        "type": "rpi-gpio out",
+        "z": "51676f5ae1675c99",
+        "name": "LED 1",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 710,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "016c3e9be89901e3",
+        "type": "function",
+        "z": "51676f5ae1675c99",
+        "name": "State Control",
+        "func": "context.state = context.state | false;\ncontext.state = !context.state\n\nvar myContext = context.state;\nvar count = context.get(\"count\")||0;\ncount += 1;\ncontext.set(\"count\",count);\nmsg.count = count;\n\nfunction isOdd(num) { \n    return num % 2;\n}\n\nif(myContext === true && isOdd((count+1)/2) ===1){\n    msg.payload = 1;\n    return msg;\n} else if (myContext === true && isOdd((count+1)/2) ===0){\n    msg.payload = 0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "06cb6823737d2dfc"
+            ]
+        ]
+    }
+]

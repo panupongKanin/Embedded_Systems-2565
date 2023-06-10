@@ -1,0 +1,114 @@
+[
+    {
+        "id": "7fc9ea12076b5d25",
+        "type": "tab",
+        "label": "Q102-0102",
+        "disabled": false,
+        "info": "Using Node-RED (press to turn on press to turn off 2LED and 2Switch) ",
+        "env": []
+    },
+    {
+        "id": "5e0e47b70cfa15b3",
+        "type": "rpi-gpio in",
+        "z": "7fc9ea12076b5d25",
+        "name": "Switch 1",
+        "pin": "26",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "e9a1afc0ccd95ad2"
+            ]
+        ]
+    },
+    {
+        "id": "ece0b86753b4806e",
+        "type": "rpi-gpio out",
+        "z": "7fc9ea12076b5d25",
+        "name": "LED 1",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 690,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e9a1afc0ccd95ad2",
+        "type": "function",
+        "z": "7fc9ea12076b5d25",
+        "name": "State Control",
+        "func": "context.state = context.state | false;\ncontext.state = !context.state\n\nvar myContext = context.state;\nvar count = context.get(\"count\")||0;\ncount += 1;\ncontext.set(\"count\",count);\nmsg.count = count;\n\nfunction isOdd(num) { \n    return num % 2;\n}\n\nif(myContext === true && isOdd((count+1)/2) ===1){\n    msg.payload = 1;\n    return msg;\n} else if (myContext === true && isOdd((count+1)/2) ===0){\n    msg.payload = 0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "ece0b86753b4806e"
+            ]
+        ]
+    },
+    {
+        "id": "0c4853c44002d61b",
+        "type": "rpi-gpio out",
+        "z": "7fc9ea12076b5d25",
+        "name": "LED 2",
+        "pin": "16",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 690,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6efb796920ac0f04",
+        "type": "rpi-gpio in",
+        "z": "7fc9ea12076b5d25",
+        "name": "Switch 2",
+        "pin": "21",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 220,
+        "y": 400,
+        "wires": [
+            [
+                "aad96eb4d550ef39"
+            ]
+        ]
+    },
+    {
+        "id": "aad96eb4d550ef39",
+        "type": "function",
+        "z": "7fc9ea12076b5d25",
+        "name": "State Control",
+        "func": "context.state = context.state | false;\ncontext.state = !context.state\nvar myContext = context.state;\nvar count = context.get(\"count\")||0;\ncount += 1;\ncontext.set(\"count\",count);\nmsg.count = count;\nfunction isOdd(num) { return num % 2;}\n\nif(myContext === true && isOdd((count+1)/2) ===1){\n    msg.payload = 1;\n    return msg;\n} else if (myContext === true && isOdd((count+1)/2) ===0){\n    msg.payload = 0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "0c4853c44002d61b"
+            ]
+        ]
+    }
+]
