@@ -338,7 +338,7 @@ except KeyboardInterrupt:
 #### โปรแกรมที่ใช้ทดสอบ
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(read%20DHT-22%20Sensor)/w03-w04-Quiz_102_0301.png" />
 
-#### code ที่ใช้
+#### Node-RED Code ที่ใช้
 ```
 [
     {
