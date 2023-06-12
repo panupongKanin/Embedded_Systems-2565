@@ -127,4 +127,20 @@ except KeyboardInterrupt:
 
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Switch%20Counter/w03-w04-Quiz_101_0303.png" />
 
-### Q102 Python Switch control LED >> กดติด ปล่อยดับ
+### Q102 Node-RED เพื่อควบคุมสวิตซ์กดแบบ กดติด กดดับ {Switch-LED 1 คู่}
+#### โปรแกรมที่ใช้ทดสอบ
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%201LED%20and%201Switch)%20/w03-w04-Quiz_102_0101.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20release%20to%20turn%20off/w03-w04-Quiz_101_0102.png" />
+#### code ที่ใช้
+#### การต่อวงจร
+
+### Q102 Node-RED เพื่อควบคุมสวิตซ์กดแบบ กดติด กดดับ 2 คู่
+#### โปรแกรมที่ใช้ทดสอบ
+#### code ที่ใช้
+#### การต่อวงจร
+
+### Q102 Node-RED เพื่ออ่าน DHT-22 Sensor
+#### โปรแกรมที่ใช้ทดสอบ
+#### code ที่ใช้
+#### การต่อวงจร
