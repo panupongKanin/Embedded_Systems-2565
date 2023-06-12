@@ -1692,7 +1692,7 @@ void loop() {
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%204%20--%20Chatbot%20LINE%20in%20Smart%20Farming)/Q403/LINE%20Chatbot/w03-w04-Quiz_404_0102.png" />
 
 #### รูปการทดสอบ 2
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%204%20--%20Chatbot%20LINE%20in%20Smart%20Farming)/Q403/LINE%20Chatbot/w03-w04-Quiz_404_0103png.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%204%20--%20Chatbot%20LINE%20in%20Smart%20Farming)/Q403/LINE%20Chatbot/w03-w04-Quiz_404_0103.png" />
 
 #### รูปการทดสอบ 3
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%204%20--%20Chatbot%20LINE%20in%20Smart%20Farming)/Q403/LINE%20Chatbot/w03-w04-Quiz_404_0103.png" />
