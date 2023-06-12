@@ -336,6 +336,84 @@ except KeyboardInterrupt:
 
 ### Q102 Node-RED เพื่ออ่าน DHT-22 Sensor
 #### โปรแกรมที่ใช้ทดสอบ
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(read%20DHT-22%20Sensor)/w03-w04-Quiz_102_0301.png" />
 
 #### code ที่ใช้
+```
+[
+    {
+        "id": "d6b35559496318d0",
+        "type": "tab",
+        "label": "Q102-0301",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bcfc5be92bd00b6f",
+        "type": "rpi-dht22",
+        "z": "d6b35559496318d0",
+        "name": "",
+        "topic": "rpi-dht22",
+        "dht": 22,
+        "pintype": "0",
+        "pin": "4",
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "ae17d2026071014f"
+            ]
+        ]
+    },
+    {
+        "id": "1ff0c6a3eade9b3c",
+        "type": "inject",
+        "z": "d6b35559496318d0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "bcfc5be92bd00b6f"
+            ]
+        ]
+    },
+    {
+        "id": "ae17d2026071014f",
+        "type": "debug",
+        "z": "d6b35559496318d0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 260,
+        "wires": []
+    }
+]
+```
+
 #### การต่อวงจร
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(read%20DHT-22%20Sensor)/w03-w04-Quiz_102_0302.png" />
