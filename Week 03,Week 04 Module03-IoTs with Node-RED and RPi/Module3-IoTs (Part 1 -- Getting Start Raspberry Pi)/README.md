@@ -93,8 +93,7 @@ while True:
 
 ### Q101 Python Switch >> Switch Counter
 #### โปรแกรมที่ใช้ทดสอบ
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20press%20to%20turn%20off/w03-w04-Quiz_101_0201.png" />
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20press%20to%20turn%20off/w03-w04-Quiz_101_0202.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Switch%20Counter/w03-w04-Quiz_101_0301.png" />
 
 #### code ที่ใช้
 ```
@@ -149,6 +148,6 @@ while True:
 ```
 
 #### การต่อวงจร
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20press%20to%20turn%20off/w03-w04-Quiz_101_0203.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Switch%20Counter/w03-w04-Quiz_101_0302.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20press%20to%20turn%20off/w03-w04-Quiz_101_0204.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Switch%20Counter/w03-w04-Quiz_101_0303.png" />
