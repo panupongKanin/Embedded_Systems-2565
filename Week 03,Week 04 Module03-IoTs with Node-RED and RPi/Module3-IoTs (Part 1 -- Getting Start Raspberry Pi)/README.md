@@ -196,6 +196,7 @@ except KeyboardInterrupt:
     }
 ]
 ```
+
 #### การต่อวงจร
 
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%201LED%20and%201Switch)%20/w03-w04-Quiz_102_0102.png" />
@@ -204,10 +205,137 @@ except KeyboardInterrupt:
 
 ### Q102 Node-RED เพื่อควบคุมสวิตซ์กดแบบ กดติด กดดับ 2 คู่
 #### โปรแกรมที่ใช้ทดสอบ
-#### code ที่ใช้
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%202LED%20and%202Switch)%20/w03-w04-Quiz_102_0201.png" />
+
+#### Node-RED Code ที่ใช้
+```
+[
+    {
+        "id": "7fc9ea12076b5d25",
+        "type": "tab",
+        "label": "Q102-0102",
+        "disabled": false,
+        "info": "Using Node-RED (press to turn on press to turn off 2LED and 2Switch) ",
+        "env": []
+    },
+    {
+        "id": "5e0e47b70cfa15b3",
+        "type": "rpi-gpio in",
+        "z": "7fc9ea12076b5d25",
+        "name": "Switch 1",
+        "pin": "26",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "e9a1afc0ccd95ad2"
+            ]
+        ]
+    },
+    {
+        "id": "ece0b86753b4806e",
+        "type": "rpi-gpio out",
+        "z": "7fc9ea12076b5d25",
+        "name": "LED 1",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 690,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e9a1afc0ccd95ad2",
+        "type": "function",
+        "z": "7fc9ea12076b5d25",
+        "name": "State Control",
+        "func": "context.state = context.state | false;\ncontext.state = !context.state\n\nvar myContext = context.state;\nvar count = context.get(\"count\")||0;\ncount += 1;\ncontext.set(\"count\",count);\nmsg.count = count;\n\nfunction isOdd(num) { \n    return num % 2;\n}\n\nif(myContext === true && isOdd((count+1)/2) ===1){\n    msg.payload = 1;\n    return msg;\n} else if (myContext === true && isOdd((count+1)/2) ===0){\n    msg.payload = 0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "ece0b86753b4806e"
+            ]
+        ]
+    },
+    {
+        "id": "0c4853c44002d61b",
+        "type": "rpi-gpio out",
+        "z": "7fc9ea12076b5d25",
+        "name": "LED 2",
+        "pin": "16",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 690,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6efb796920ac0f04",
+        "type": "rpi-gpio in",
+        "z": "7fc9ea12076b5d25",
+        "name": "Switch 2",
+        "pin": "21",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 220,
+        "y": 400,
+        "wires": [
+            [
+                "aad96eb4d550ef39"
+            ]
+        ]
+    },
+    {
+        "id": "aad96eb4d550ef39",
+        "type": "function",
+        "z": "7fc9ea12076b5d25",
+        "name": "State Control",
+        "func": "context.state = context.state | false;\ncontext.state = !context.state\nvar myContext = context.state;\nvar count = context.get(\"count\")||0;\ncount += 1;\ncontext.set(\"count\",count);\nmsg.count = count;\nfunction isOdd(num) { return num % 2;}\n\nif(myContext === true && isOdd((count+1)/2) ===1){\n    msg.payload = 1;\n    return msg;\n} else if (myContext === true && isOdd((count+1)/2) ===0){\n    msg.payload = 0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "0c4853c44002d61b"
+            ]
+        ]
+    }
+]
+```
+
 #### การต่อวงจร
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%202LED%20and%202Switch)%20/w03-w04-Quiz_102_0202.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%202LED%20and%202Switch)%20/w03-w04-Quiz_102_0203.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%202LED%20and%202Switch)%20/w03-w04-Quiz_102_0204.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q102/Using%20Node-RED%20(press%20to%20turn%20on%20press%20to%20turn%20off%202LED%20and%202Switch)%20/w03-w04-Quiz_102_0205.png" />
 
 ### Q102 Node-RED เพื่ออ่าน DHT-22 Sensor
 #### โปรแกรมที่ใช้ทดสอบ
+
 #### code ที่ใช้
 #### การต่อวงจร
