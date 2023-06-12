@@ -1,0 +1,347 @@
+[
+    {
+        "id": "0f1e807e520403ff",
+        "type": "tab",
+        "label": "Q402-0401",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "26213b1ceab8d687",
+        "type": "line-notify",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "message": "Sensor ActiveXXXXXXXXXXXXXX",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "11",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "591415dad7908dc3",
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "e759f324160a52de"
+            ]
+        ]
+    },
+    {
+        "id": "55c7da970b5006a2",
+        "type": "debug",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "51ea9635d139d70e",
+        "type": "ui_switch",
+        "z": "0f1e807e520403ff",
+        "tab": "4410af667a3d8692",
+        "name": "",
+        "topic": "topic",
+        "group": "Q402",
+        "order": 2,
+        "onvalue": "ON1",
+        "offvalue": "OFF1",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "52607273423ad64e"
+            ]
+        ]
+    },
+    {
+        "id": "e7793cb2f893f284",
+        "type": "function",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "func": "//Tempp=38.20,Humid=73.52 \n\nvar msg1 = {};\nvar msg2 = {};\n\nvar output =msg.payload.split(\",\");\n\nvar sTempp = output[0].split(\"=\");\nmsg1.payload = sTempp[1];\nmsg1.topic= 'Temperature';\n\nvar sHumid = output[1].split(\"=\");\nmsg2.payload = sHumid[1];\nmsg2.topic ='Humidity';\n\nreturn[msg1,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "6ac6b44784427ffc",
+                "976fac59a1d4967d",
+                "376f66c48cfa5f5a"
+            ],
+            [
+                "107df563935a0217",
+                "376f66c48cfa5f5a",
+                "976fac59a1d4967d"
+            ]
+        ]
+    },
+    {
+        "id": "6ac6b44784427ffc",
+        "type": "ui_gauge",
+        "z": "0f1e807e520403ff",
+        "tab": "4410af667a3d8692",
+        "name": "",
+        "group": "Q402",
+        "order": 2,
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 790,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "976fac59a1d4967d",
+        "type": "ui_chart",
+        "z": "0f1e807e520403ff",
+        "tab": "4410af667a3d8692",
+        "name": "",
+        "group": "Q402",
+        "order": 1,
+        "interpolate": "linear",
+        "nodata": "",
+        "removeOlder": "5",
+        "removeOlderUnit": "60",
+        "x": 790,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "376f66c48cfa5f5a",
+        "type": "ui_chart",
+        "z": "0f1e807e520403ff",
+        "tab": "4410af667a3d8692",
+        "name": "",
+        "group": "Q402",
+        "order": 0,
+        "interpolate": "linear",
+        "nodata": "",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "x": 790,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "107df563935a0217",
+        "type": "ui_gauge",
+        "z": "0f1e807e520403ff",
+        "tab": "4410af667a3d8692",
+        "name": "",
+        "group": "Q402",
+        "order": 4,
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 790,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e759f324160a52de",
+        "type": "http request",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "55c7da970b5006a2"
+            ]
+        ]
+    },
+    {
+        "id": "bf7aa3046b21a120",
+        "type": "mqtt in",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "topic": "feedback/sensors",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "e7793cb2f893f284"
+            ]
+        ]
+    },
+    {
+        "id": "52607273423ad64e",
+        "type": "mqtt out",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "topic": "control/leds",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d9b6929cc83977a5",
+        "x": 810,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6c5bd7c7f79e6205",
+        "type": "mqtt in",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "topic": "feedback/switch",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "6e39010d22ea1619"
+            ]
+        ]
+    },
+    {
+        "id": "b8a769625e1c9190",
+        "type": "mqtt in",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "topic": "control/leds",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "c5633dedfbbd146a"
+            ]
+        ]
+    },
+    {
+        "id": "c5633dedfbbd146a",
+        "type": "line-notify",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "message": "LED ActiveYYYYYYYYYYYYYY",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "11",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "591415dad7908dc3",
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "e759f324160a52de"
+            ]
+        ]
+    },
+    {
+        "id": "6e39010d22ea1619",
+        "type": "function",
+        "z": "0f1e807e520403ff",
+        "name": "",
+        "func": "\nvar stsNow =context.global.sts;\nif (msg.payload == 'SW_ON') {\n stsNow = true;\n}\nif (msg.payload == 'SW_OFF'){\n stsNow = false;\n}\ncontext.global.sts = stsNow;\nmsg.payload = stsNow;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "26213b1ceab8d687"
+            ]
+        ]
+    },
+    {
+        "id": "591415dad7908dc3",
+        "type": "linetoken",
+        "name": "M4Q402"
+    },
+    {
+        "id": "4410af667a3d8692",
+        "type": "ui_tab",
+        "name": "Q402-0401",
+        "icon": "dashboard",
+        "order": "4"
+    },
+    {
+        "id": "d9b6929cc83977a5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.31",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

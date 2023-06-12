@@ -1,0 +1,106 @@
+[
+    {
+        "id": "6790d352.2280ac",
+        "type": "tab",
+        "label": "Q402-0301",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ca2e8cd2.5bd98",
+        "type": "line-notify",
+        "z": "6790d352.2280ac",
+        "name": "",
+        "message": "Send \"Test Massage\" from RaspberryPi",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "11",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "591415dad7908dc3",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "aecf6b014cdb95b7"
+            ]
+        ]
+    },
+    {
+        "id": "b23ae221.44489",
+        "type": "debug",
+        "z": "6790d352.2280ac",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "88d3a65e.a258c8",
+        "type": "inject",
+        "z": "6790d352.2280ac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "ca2e8cd2.5bd98"
+            ]
+        ]
+    },
+    {
+        "id": "aecf6b014cdb95b7",
+        "type": "http request",
+        "z": "6790d352.2280ac",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "b23ae221.44489"
+            ]
+        ]
+    },
+    {
+        "id": "591415dad7908dc3",
+        "type": "linetoken",
+        "name": "M4Q402"
+    }
+]

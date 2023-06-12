@@ -1,0 +1,465 @@
+[
+    {
+        "id": "ca81a9d4127e494b",
+        "type": "tab",
+        "label": "Q404-0101",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e7622ccb4bf17cea",
+        "type": "function",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "func": "//   Tempp=38.20,Humid=73.52 \n\nvar msg1 = {};\nvar msg2 = {};\n\nvar output =   msg.payload.split(\",\");\n\nvar sTempp =   output[0].split(\"=\");\nmsg1.payload = sTempp[1];\nmsg1.topic =   'Temperature';\n\nvar sHumid =   output[1].split(\"=\");\nmsg2.payload = sHumid[1];\nmsg2.topic =   'Humidity';\n\ncontext.global.tempp = sTempp[1];\ncontext.global.humid =   sHumid[1];\n\nreturn   [msg1,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "8d02bda2ce6a4e83",
+                "056ca60eaa1e5871",
+                "ae97a9fe27d15673"
+            ],
+            [
+                "04bf88bdb94b1023",
+                "ae97a9fe27d15673",
+                "056ca60eaa1e5871"
+            ]
+        ]
+    },
+    {
+        "id": "8d02bda2ce6a4e83",
+        "type": "ui_gauge",
+        "z": "ca81a9d4127e494b",
+        "tab": "1a56f108c6e37004",
+        "name": "",
+        "group": "Q403-0101",
+        "order": 2,
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 650,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "056ca60eaa1e5871",
+        "type": "ui_chart",
+        "z": "ca81a9d4127e494b",
+        "tab": "1a56f108c6e37004",
+        "name": "",
+        "group": "Q403-0101",
+        "order": 1,
+        "interpolate": "linear",
+        "nodata": "",
+        "removeOlder": "5",
+        "removeOlderUnit": "60",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae97a9fe27d15673",
+        "type": "ui_chart",
+        "z": "ca81a9d4127e494b",
+        "tab": "1a56f108c6e37004",
+        "name": "",
+        "group": "Q403-0101",
+        "order": 0,
+        "interpolate": "linear",
+        "nodata": "",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "x": 650,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04bf88bdb94b1023",
+        "type": "ui_gauge",
+        "z": "ca81a9d4127e494b",
+        "tab": "1a56f108c6e37004",
+        "name": "",
+        "group": "Q403-0101",
+        "order": 4,
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 650,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bb483091a924395e",
+        "type": "ui_switch",
+        "z": "ca81a9d4127e494b",
+        "tab": "1a56f108c6e37004",
+        "name": "",
+        "topic": "topic",
+        "group": "Q403-0101",
+        "order": 2,
+        "onvalue": "ON1",
+        "offvalue": "OFF1",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "7feab23724ead6ef",
+                "a0ce9594ad51bc5d"
+            ]
+        ]
+    },
+    {
+        "id": "9197b1d96b2bdcfe",
+        "type": "function",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "func": "\nvar   stsNow = context.global.sts;\nif (msg.payload == 'SW_ON') {\n    stsNow = true;\n}\nif (msg.payload ==   'SW_OFF') {\n    stsNow =   false;\n}\ncontext.global.sts = stsNow;\nmsg.payload = stsNow;\n\nreturn   msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "8d924afac0269860"
+            ]
+        ]
+    },
+    {
+        "id": "8428c3554b4735a6",
+        "type": "line-notify",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "message": "Sensor   Active",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "11",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "591415dad7908dc3",
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "652ee4d0e5aac573"
+            ]
+        ]
+    },
+    {
+        "id": "9afd7fab7f9cb4f5",
+        "type": "debug",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8d924afac0269860",
+        "type": "switch",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "8428c3554b4735a6"
+            ]
+        ]
+    },
+    {
+        "id": "a868e94c90eb9647",
+        "type": "function",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "func": "var receive_msg = msg.payload;\nvar reply ;\n\nif(receive_msg.events[0].message.type==\"text\")\n    {     \n      if(receive_msg.events[0].message.text==\"Hello\")\n      {\n        reply = {type:'text', text:\"Hello\"};\n      }\n\n      else if(receive_msg.events[0].message.text==\"Tempp\")\n      {\n        reply = {type:'text', text:   context.global.tempp};\n      }\n\n      else if(receive_msg.events[0].message.text==\"Humid\")\n      {\n        reply = {type:'text', text:   context.global.humid};\n      }\n\n      else if(receive_msg.events[0].message.text==\"Sensor\")\n      {   \n        var xSensor = 'Sensor Off'\n        if(context.global.sts){xSensor = 'Sensor On'}\n        reply = {type:'text', text:   xSensor};\n      }\n\n      else if(receive_msg.events[0].message.text==\"On\")\n      {\n        context.global.ctrl = 'ON1'\n        reply = {type:'text', text:\"Ok turn on\"};\n      }\n\n      else if(receive_msg.events[0].message.text==\"Off\")\n      {   \n        context.global.ctrl = 'OFF1'\n        reply = {type:'text', text:\"Ok turn off\"};\n      }\n\n      else\n      {   \n        reply = {type:'text', text:\"i don't know\"}\n      }\n    }\n\nvar value =   [receive_msg,reply];\nmsg.payload = value;\nreturn   msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 760,
+        "wires": [
+            [
+                "22a80689dd4116ce"
+            ]
+        ]
+    },
+    {
+        "id": "f6699a8a4e33ecc6",
+        "type": "debug",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7feab23724ead6ef",
+        "type": "function",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "func": "context.global.ctrl   = msg.payload\nreturn   msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "652ee4d0e5aac573"
+            ]
+        ]
+    },
+    {
+        "id": "326938dc1ca536d2",
+        "type": "inject",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 660,
+        "wires": [
+            [
+                "dd26eb7aebe35092"
+            ]
+        ]
+    },
+    {
+        "id": "dd26eb7aebe35092",
+        "type": "function",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "func": "msg.payload   = context.global.ctrl \nreturn   msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "a0ce9594ad51bc5d"
+            ]
+        ]
+    },
+    {
+        "id": "652ee4d0e5aac573",
+        "type": "http request",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "9afd7fab7f9cb4f5"
+            ]
+        ]
+    },
+    {
+        "id": "eca20c5d08fd540d",
+        "type": "mqtt in",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "topic": "feedback/sensors",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "e7622ccb4bf17cea"
+            ]
+        ]
+    },
+    {
+        "id": "8bcf5d4ba1886bbb",
+        "type": "mqtt in",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "topic": "feedback/switch",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "9197b1d96b2bdcfe"
+            ]
+        ]
+    },
+    {
+        "id": "a0ce9594ad51bc5d",
+        "type": "mqtt out",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "topic": "control/leds",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d9b6929cc83977a5",
+        "x": 690,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6cec19fea0d1b42a",
+        "type": "http in",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "url": "/callback",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 760,
+        "wires": [
+            [
+                "a868e94c90eb9647"
+            ]
+        ]
+    },
+    {
+        "id": "22a80689dd4116ce",
+        "type": "linebot-client",
+        "z": "ca81a9d4127e494b",
+        "name": "",
+        "channelAccessToken": "uHe5G5d9b76TMY+4V/4ps7QcXPx+mC10MunVwNqBknT+0P9/zHCmrFFjeGfkKn+v22UUHSUudDJRcKhiBUo+fmKPx9zuDb6GmKSXw/J3jVGUsTEQEZpZVZbJJAQNHgdkTVg83niOP0RerH3Tmt7qPwdB04t89/1O/w1cDnyilFU=",
+        "channelSecret": "bfa47238da49f53f7afc046db8263a9b",
+        "x": 560,
+        "y": 760,
+        "wires": [
+            [
+                "f6699a8a4e33ecc6"
+            ]
+        ]
+    },
+    {
+        "id": "1a56f108c6e37004",
+        "type": "ui_tab",
+        "name": "Q403-0101",
+        "icon": "dashboard",
+        "order": "1"
+    },
+    {
+        "id": "591415dad7908dc3",
+        "type": "linetoken",
+        "name": "M4Q402"
+    },
+    {
+        "id": "d9b6929cc83977a5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.31",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

@@ -1,0 +1,258 @@
+[
+    {
+        "id": "bfdfb28d613836ee",
+        "type": "tab",
+        "label": "Q402-0201",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "99081251955e2969",
+        "type": "debug",
+        "z": "bfdfb28d613836ee",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ca51dabcc70e764e",
+        "type": "function",
+        "z": "bfdfb28d613836ee",
+        "name": "Message1",
+        "func": "var token ='FYfx1woSF3SYOZexMC7ia5jX6IaOQlO2EHL7KDeCsut';\nvar message = 'LINE-Massage From Node-RED';\n\nmsg.headers = {\n 'content-type':'application/x-www-form-urlencoded',\n'Authorization':'Bearer ' + token\n};\n\nmsg.payload = {\n 'message': message\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "1d6974daa5523c41"
+            ]
+        ]
+    },
+    {
+        "id": "45c5828c24614fc5",
+        "type": "inject",
+        "z": "bfdfb28d613836ee",
+        "name": "Send_Massage",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "ca51dabcc70e764e"
+            ]
+        ]
+    },
+    {
+        "id": "42b9851aad6c539c",
+        "type": "inject",
+        "z": "bfdfb28d613836ee",
+        "name": "Send_Sticker",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "7db1785add669cde"
+            ]
+        ]
+    },
+    {
+        "id": "e8a63beb9ce948c9",
+        "type": "function",
+        "z": "bfdfb28d613836ee",
+        "name": "Message3",
+        "func": "\nvar url_img = 'https://bear.org/wp-content/uploads/2008/01/Griz-family-danger-ahead.jpg';\nvar token = 'FYfx1woSF3SYOZexMC7ia5jX6IaOQlO2EHL7KDeCsut';\nvar message = 'LINE-URL Image';\n\nmsg.headers = {\n 'content-type':'application/x-www-form-urlencoded',\n'Authorization':'Bearer ' + token\n};\n\nmsg.payload = {\n'message':message,\n\t'imageThumbnail':url_img,\n\t'imageFullsize':url_img\n };\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "1d6974daa5523c41"
+            ]
+        ]
+    },
+    {
+        "id": "c6cc0446edd6c42f",
+        "type": "inject",
+        "z": "bfdfb28d613836ee",
+        "name": "Send_URL-Image",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "e8a63beb9ce948c9"
+            ]
+        ]
+    },
+    {
+        "id": "1f1e97eda7559188",
+        "type": "inject",
+        "z": "bfdfb28d613836ee",
+        "name": "Send_Image",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hallo ImageTest",
+        "payloadType": "str",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "d35f0cee69c584d2"
+            ]
+        ]
+    },
+    {
+        "id": "7db1785add669cde",
+        "type": "function",
+        "z": "bfdfb28d613836ee",
+        "name": "Message2",
+        "func": "var token ='FYfx1woSF3SYOZexMC7ia5jX6IaOQlO2EHL7KDeCsut';\nvar message = 'LINE-Sticker';\nvar stickerPackageId =8522;\nvar stickerId = 16581266;\n\nmsg.headers = {\n 'content-type':'application/x-www-form-urlencoded',\n 'Authorization':'Bearer ' + token\n};\n\nmsg.payload = {\n 'message': message,\n'stickerPackageId':stickerPackageId,\n 'stickerId':stickerId\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "1d6974daa5523c41"
+            ]
+        ]
+    },
+    {
+        "id": "d831d3f0ce4f7c5e",
+        "type": "NotifyImage",
+        "z": "bfdfb28d613836ee",
+        "name": "LINE-Image",
+        "tmsg": "",
+        "imgfile": "https://nypost.com/wp-content/uploads/sites/2/2021/12/cat-mad_13.jpg?quality=75&strip=all",
+        "AccToken": "FYfx1woSF3SYOZexMC7ia5jX6IaOQlO2EHL7KDeCsut",
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "1d6974daa5523c41"
+            ]
+        ]
+    },
+    {
+        "id": "d35f0cee69c584d2",
+        "type": "function",
+        "z": "bfdfb28d613836ee",
+        "name": "Message4",
+        "func": "var message = 'Send Image Data';\nmsg.payload =message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "d831d3f0ce4f7c5e"
+            ]
+        ]
+    },
+    {
+        "id": "1d6974daa5523c41",
+        "type": "http request",
+        "z": "bfdfb28d613836ee",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "99081251955e2969"
+            ]
+        ]
+    }
+]

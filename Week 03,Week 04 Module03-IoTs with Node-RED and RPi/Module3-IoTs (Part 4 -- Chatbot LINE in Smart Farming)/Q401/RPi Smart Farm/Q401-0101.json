@@ -1,0 +1,196 @@
+[
+    {
+        "id": "8982e95ddaea1943",
+        "type": "tab",
+        "label": "Q401-0101",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "287869c0be568bc8",
+        "type": "function",
+        "z": "8982e95ddaea1943",
+        "name": "",
+        "func": "//   Tempp=38.20,Humid=73.52 \n\nvar msg1   = {};\nvar msg2 = {};\n\nvar output =   msg.payload.split(\",\");\n\nvar sTempp = output[0].split(\"=\");\nmsg1.payload = sTempp[1];\nmsg1.topic = 'Temperature';\n\nvar   sHumid = output[1].split(\"=\");\nmsg2.payload = sHumid[1];\nmsg2.topic = 'Humidity';\n\nreturn   [msg1,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "314e6fc73de0b3b2",
+                "ffdc2f39a719cb9f"
+            ],
+            [
+                "922989963c892994",
+                "c87d555924e87fbc"
+            ]
+        ]
+    },
+    {
+        "id": "922989963c892994",
+        "type": "ui_gauge",
+        "z": "8982e95ddaea1943",
+        "tab": "5ab59fbbd41d64e9",
+        "name": "Humidity",
+        "group": "Farm",
+        "order": "3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1ee84dc4716b94ae",
+        "type": "ui_switch",
+        "z": "8982e95ddaea1943",
+        "tab": "5ab59fbbd41d64e9",
+        "name": "LED1",
+        "topic": "topic",
+        "group": "Farm",
+        "order": "0",
+        "onvalue": "ON1",
+        "offvalue": "OFF1",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "172f630b25f47c66"
+            ]
+        ]
+    },
+    {
+        "id": "271f9555b85e5f30",
+        "type": "mqtt in",
+        "z": "8982e95ddaea1943",
+        "name": "",
+        "topic": "feedback/sensors",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "d9b6929cc83977a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "287869c0be568bc8"
+            ]
+        ]
+    },
+    {
+        "id": "172f630b25f47c66",
+        "type": "mqtt out",
+        "z": "8982e95ddaea1943",
+        "name": "",
+        "topic": "control/leds",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d9b6929cc83977a5",
+        "x": 750,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c87d555924e87fbc",
+        "type": "ui_chart",
+        "z": "8982e95ddaea1943",
+        "tab": "5ab59fbbd41d64e9",
+        "name": "",
+        "group": "Farm",
+        "order": "4",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "314e6fc73de0b3b2",
+        "type": "ui_chart",
+        "z": "8982e95ddaea1943",
+        "tab": "5ab59fbbd41d64e9",
+        "name": "",
+        "group": "Farm",
+        "order": "2",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ffdc2f39a719cb9f",
+        "type": "ui_gauge",
+        "z": "8982e95ddaea1943",
+        "tab": "5ab59fbbd41d64e9",
+        "name": "Temperature",
+        "group": "Farm",
+        "order": "1",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5ab59fbbd41d64e9",
+        "type": "ui_tab",
+        "name": "Farm",
+        "icon": "dashboard",
+        "order": "1"
+    },
+    {
+        "id": "d9b6929cc83977a5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.31",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

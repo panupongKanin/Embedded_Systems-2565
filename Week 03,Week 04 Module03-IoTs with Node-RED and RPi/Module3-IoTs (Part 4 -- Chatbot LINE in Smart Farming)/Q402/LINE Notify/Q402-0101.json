@@ -1,0 +1,97 @@
+[
+    {
+        "id": "18068883f6581588",
+        "type": "tab",
+        "label": "Q402-0101",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a809186e12e39a1f",
+        "type": "debug",
+        "z": "18068883f6581588",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "209a69d8f2ab744b",
+        "type": "function",
+        "z": "18068883f6581588",
+        "name": "Message",
+        "func": "msg.token = 'FYfx1woSF3SYOZexMC7ia5jX6IaOQlO2EHL7KDeCsut';\nmsg.message= 'Hello';\nmsg.stickerPackageId = 6359;\nmsg.stickerId = 11069852;\n\nmsg.headers = {\n 'content-type':'application/x-www-form-urlencoded',\n 'Authorization':'Bearer ' + msg.token\n};\n\nmsg.payload ={\n 'message': msg.message,\n 'stickerPackageId':msg.stickerPackageId,\n'stickerId':msg.stickerId\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "d06fca3f9d1231cc"
+            ]
+        ]
+    },
+    {
+        "id": "6a5e1d098fbfd185",
+        "type": "inject",
+        "z": "18068883f6581588",
+        "name": "Send_Sticker",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "209a69d8f2ab744b"
+            ]
+        ]
+    },
+    {
+        "id": "d06fca3f9d1231cc",
+        "type": "http request",
+        "z": "18068883f6581588",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "a809186e12e39a1f"
+            ]
+        ]
+    }
+]
