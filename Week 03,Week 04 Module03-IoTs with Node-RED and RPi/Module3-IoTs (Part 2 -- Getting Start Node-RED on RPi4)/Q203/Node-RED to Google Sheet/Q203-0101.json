@@ -1,0 +1,99 @@
+[
+    {
+        "id": "bccf86285085930b",
+        "type": "tab",
+        "label": "Q203-0101",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7d1e14812a855917",
+        "type": "http request",
+        "z": "bccf86285085930b",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfZrXI2Jkf2fCOMY31jeSyHmBqLsJPYtGRpINk90Y6CxExlCA/formResponse?entry.252906820=1111&entry.786950774=1111&entry.1482600245=1111&entry.1894859910=1111",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "b9895985dc7e1f96"
+            ]
+        ]
+    },
+    {
+        "id": "cb0745f72cc70fd3",
+        "type": "inject",
+        "z": "bccf86285085930b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "09b1e9e81f8ff62a"
+            ]
+        ]
+    },
+    {
+        "id": "b9895985dc7e1f96",
+        "type": "debug",
+        "z": "bccf86285085930b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "09b1e9e81f8ff62a",
+        "type": "function",
+        "z": "bccf86285085930b",
+        "name": "function 1",
+        "func": "var data = {}\ndata.Tempp = parseFloat((Math.random() * 20) + 20).toFixed(2);\ndata.Humid = parseFloat((Math.random() * 20) + 40).toFixed(2);\ndata.Light = parseFloat((Math.random() * 20) + 60).toFixed(2);\ndata.RSSI = parseFloat((Math.random() * 20) + 80).toFixed(2);\n\nmsg.payload = data\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "7d1e14812a855917"
+            ]
+        ]
+    }
+]

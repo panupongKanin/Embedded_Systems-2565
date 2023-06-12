@@ -1,0 +1,99 @@
+[
+    {
+        "id": "bf05387658e4fc4c",
+        "type": "tab",
+        "label": "Q202-0101",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8cb66889.d96b28",
+        "type": "http request",
+        "z": "bf05387658e4fc4c",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "6d47b0ce.054b2"
+            ]
+        ]
+    },
+    {
+        "id": "6d47b0ce.054b2",
+        "type": "debug",
+        "z": "bf05387658e4fc4c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "51ef834a.3d95ec",
+        "type": "function",
+        "z": "bf05387658e4fc4c",
+        "name": "Message",
+        "func": "msg.token = 'Your Token';\nmsg.message = \"Hello World\";\nmsg.stickerPackageId = 11537;\nmsg.stickerId = 52002734;\n\nmsg.headers = {\n \"content-type\":\"application/x-www-form-urlencoded\",\n \"Authorization\":\"Bearer \" + msg.token\n};\nmsg.payload = {\n \"message\": msg.message,\n \"stickerPackageId\":msg.stickerPackageId,\n \"stickerId\":msg.stickerId\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "8cb66889.d96b28"
+            ]
+        ]
+    },
+    {
+        "id": "75e765f7.d089fc",
+        "type": "inject",
+        "z": "bf05387658e4fc4c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "51ef834a.3d95ec"
+            ]
+        ]
+    }
+]
