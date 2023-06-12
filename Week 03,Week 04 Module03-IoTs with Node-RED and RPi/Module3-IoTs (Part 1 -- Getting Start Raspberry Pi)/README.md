@@ -28,3 +28,10 @@ while True:
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20release%20to%20turn%20off/w03-w04-Quiz_101_0103.png" />
 
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20release%20to%20turn%20off/w03-w04-Quiz_101_0104.png" />
+
+### Q101 Python Switch control LED >> กดติด กดดับ
+#### โปรแกรมที่ใช้ทดสอบ
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20release%20to%20turn%20off/w03-w04-Quiz_101_0105.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week03-Week04_Module03/Module3-IoTs%20(Part%201%20--%20Getting%20Start%20Raspberry%20Pi)/Q101/Press%20to%20turn%20on%20release%20to%20turn%20off/w03-w04-Quiz_101_0106.png" />
+#### code ที่ใช้
+#### การต่อวงจร
