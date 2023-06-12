@@ -22,7 +22,7 @@
 
 
 
-- ### [Module3-IoTs (Part 3 -- IoTs with Node-RED and RPi)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Module1-IOT%20(Part%201))
+- ### [Module3-IoTs (Part 3 -- IoTs with Node-RED and RPi)](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Week%2003%2CWeek%2004%20Module03-IoTs%20with%20Node-RED%20and%20RPi/Module3-IoTs%20(Part%203%20--%20IoTs%20with%20Node-RED%20and%20RPi))
 
 
 
