@@ -152,7 +152,7 @@ void loop() {
 }
 ```
 
-#### code สำหรับ ESP32 ที่ใช้
+#### Node-RED Code ที่ใช้
 ```
 [
     {
