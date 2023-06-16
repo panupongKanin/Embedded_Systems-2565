@@ -2,9 +2,7 @@
 ##### ขั้นตอนการอ่านข้อมูล จาก Sensor มาเก็บไว้ที่ InfluxDB แล้ว ใช้ Grafana ในการ monitor ข้อมูล
 #### Step-1: Test DHT-22 Sensor
 
-1. DHT-22 — > https://www.cybertice.com/p/697
-• Read Temperature
-• Read Humidity
+1. DHT-22 : https://www.cybertice.com/p/697 >> Read Temperature >> Read Humidity
 
 #### Code ที่ใช้
 ```
@@ -65,10 +63,7 @@ void loop() {
 #### ผลการทดสอบ 2
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-1_Test%20DHT-22%20and%20BMP-280%20Sensor/DHT-22%20/s01-0102.png" />
 
-2. How to use BMP-280  https://www.circuitschools.com/interfacing-bmp280-with-esp-32-on-i2c-with-errors-and-solutions/
-• Read Temperature
-• Read Pressure	 
-• Read Altitude	
+2. How to use BMP-280  https://www.circuitschools.com/interfacing-bmp280-with-esp-32-on-i2c-with-errors-and-solutions/ >> Read Temperature >> Read Pressure >> Read Altitude	
 
 #### Code ที่ใช้
 ```
@@ -199,6 +194,36 @@ void loop()
 
 
 #### Step-2: InfluxDB → Bucket Name = “B6304577”
+1. https://www.influxdata.com/get-influxdb/ : Login to influxDB Clound 2.0
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0101.png" />
+
+2. Register InfluxDB
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0102.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0103.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0104.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0105.png" />
+
+3. Create Bucket
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0106.png" />
+
+2. Register InfluxDB
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0107.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0108.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0109.png" />
+
+4. Create Tokenkey
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0110.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0111.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0112.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-2_InfluxDB%20/s02-0113.png" />
 
 #### Step-3: ESP32 Code
 
