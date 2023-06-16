@@ -31,7 +31,7 @@
 ## Week05-Database and Grafana
 <img src="https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9" /> <img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=InfluxDB&logoColor=white" /> 
 
-- ### [Visualize Sensor data using Grafana and InfluxDB](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Week%2003%2CWeek%2004%20Module03-IoTs%20with%20Node-RED%20and%20RPi/Module3-IoTs%20(Part%204%20--%20Chatbot%20LINE%20in%20Smart%20Farming))
+- ### [Visualize Sensor data using Grafana and InfluxDB](https://github.com/panupongKanin/Embedded_Systems-2565/tree/main/Week05%20Grafana%20and%20InfluxDB))
 
 
 ## Week06, 07 Modbus Protocol
