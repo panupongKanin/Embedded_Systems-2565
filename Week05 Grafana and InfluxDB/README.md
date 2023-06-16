@@ -131,7 +131,71 @@ void loop() {
 
 ```
 #### ผลการทดสอบ 1
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-1_Test%20DHT-22%20and%20BMP-280%20Sensor/BMP-280%20/s01-0201.png" />
+
 #### ผลการทดสอบ 2
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-1_Test%20DHT-22%20and%20BMP-280%20Sensor/BMP-280%20/s01-0202.png" />
+
+!!! But unfortunately, we got an error, saying, “Could not find a valid bmp 280 sensor, check wiring.”
+
+To solve this, first we need to find the, i2c address of the bmp sensor, with i2c scanner, like our previous tutorials, link for the code here. upload the code, and open serial monitor, to check the i2c address, where it was 0x76. note it down, and get back to our previous sample code, and type the address, in the sensor initialization line, as shown.
+
+#### Code ที่ใช้
+
+```
+#include <Wire.h> //include Wire.h library
+ 
+void setup()
+{
+  Wire.begin(); // Wire communication begin
+  Serial.begin(9600); // The baudrate of Serial monitor is set in 9600
+  while (!Serial); // Waiting for Serial Monitor
+  Serial.println("\nI2C address Scanner");
+}
+ 
+void loop()
+{
+  byte error, address; //variable for error and I2C address
+  int devicecount;
+ 
+  Serial.println("Scanning...");
+ 
+  devicecount = 0;
+  for (address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmisstion to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address < 16)
+        Serial.print("0");
+      Serial.print(address, HEX);
+      Serial.println("  !");
+      devicecount++;
+    }
+    else if (error == 4)
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address < 16)
+        Serial.print("0");
+      Serial.println(address, HEX);
+    }
+  }
+  if (devicecount == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
+ 
+  delay(5000); // wait 5 seconds for the next I2C scan
+}
+```
+#### ผลการทดสอบ 1
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-1_Test%20DHT-22%20and%20BMP-280%20Sensor/BMP-280%20/s01-0203.png" />
 
 
 #### Step-2: InfluxDB → Bucket Name = “B6304577”
