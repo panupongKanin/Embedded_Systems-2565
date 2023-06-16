@@ -5,6 +5,7 @@
 1. DHT-22 — > https://www.cybertice.com/p/697
 • Read Temperature
 • Read Humidity
+
 #### Code ที่ใช้
 ```
 #include "DHT.h"
@@ -65,9 +66,10 @@ void loop() {
 <img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-1_Test%20DHT-22%20and%20BMP-280%20Sensor/DHT-22%20/s01-0102.png" />
 
 2. How to use BMP-280  https://www.circuitschools.com/interfacing-bmp280-with-esp-32-on-i2c-with-errors-and-solutions/
-•	Read Temperature
-•	Read Pressure	 
-•	Read Altitude	
+• Read Temperature
+• Read Pressure	 
+• Read Altitude	
+
 #### Code ที่ใช้
 ```
 
