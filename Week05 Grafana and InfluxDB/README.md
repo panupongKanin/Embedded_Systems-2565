@@ -227,39 +227,43 @@ void loop()
 
 #### Step-3: ESP32 Code
 1. Add Library
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_InfluxDB%20/s03-0101.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_ESP32%20Code/s03-0101.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_InfluxDB%20/s03-0102.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_ESP32%20Code/s03-0102.png" />
 
 2. Code write data to InfluxDB
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_InfluxDB%20/s03-0103.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_ESP32%20Code/s03-0103.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_InfluxDB%20/s03-0104.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_ESP32%20Code/s03-0104.png" />
 
 3. Monitor
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_InfluxDB%20/s03-0105.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-3_ESP32%20Code/s03-0105.png" />
 
 #### Step-4: Grafana → Dashboard Name = “01”
 1. https://grafana.com/	 Create free account (or Sign in)
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0101.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0101.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0102.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0102.png" />
 
 2. Import Data
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0103.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0103.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0104.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0104.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0105.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0105.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0106.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0106.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0107.png" />
+
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0108.png" />
 
 3. Create Dashboard
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0107.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0109.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0108.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0110.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0109.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0111.png" />
 
-<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_InfluxDB%20/s04-0110.png" />
+<img src= "https://github.com/panupongKanin/Embedded_Systems-2565/blob/main/image/Week05%20Grafana%20and%20InfluxDB/Step-4_Grafana%20/s04-0112.png" />
 
